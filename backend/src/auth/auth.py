@@ -5,11 +5,11 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = 'udacity-fsnd.auth0.com'
+AUTH0_DOMAIN = 'dev-xu44ytsw.eu.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'dev'
+API_AUDIENCE = 'coffee'
 
-## AuthError Exception
+## AuthError ExceptionY
 '''
 AuthError Exception
 A standardized way to communicate auth failure modes
@@ -40,7 +40,7 @@ def get_token_auth_header():
     auth = request.headers.get('Authorization', None)
     if not auth:
         raise AuthError({
-            'code': 'authorization_header_missing',
+            'code': 'authorization_header_missing',7
             'description': 'Authorization header is expected.'
         }, 401)
 
